@@ -22,13 +22,38 @@
         }, 
         {
             "location": "/tp1/", 
-            "text": "TP1 - Services Web REST et SOAP avec Talend", 
+            "text": "TP1 - Services Web REST et SOAP avec Talend\n\n\n\n\nTalend\n\n\nService Web SOAP : Helloworld\n\n\nClient SOAP\n\n\nService Web REST : Interrogation d'une base de donn\u00e9es\n\n\nClient REST", 
             "title": "TP1"
         }, 
         {
             "location": "/tp1/#tp1-services-web-rest-et-soap-avec-talend", 
             "text": "", 
             "title": "TP1 - Services Web REST et SOAP avec Talend"
+        }, 
+        {
+            "location": "/tp1/#talend", 
+            "text": "", 
+            "title": "Talend"
+        }, 
+        {
+            "location": "/tp1/#service-web-soap-helloworld", 
+            "text": "", 
+            "title": "Service Web SOAP : Helloworld"
+        }, 
+        {
+            "location": "/tp1/#client-soap", 
+            "text": "", 
+            "title": "Client SOAP"
+        }, 
+        {
+            "location": "/tp1/#service-web-rest-interrogation-dune-base-de-donnees", 
+            "text": "", 
+            "title": "Service Web REST : Interrogation d'une base de donn\u00e9es"
+        }, 
+        {
+            "location": "/tp1/#client-rest", 
+            "text": "", 
+            "title": "Client REST"
         }, 
         {
             "location": "/tp2/", 
@@ -62,13 +87,13 @@
         }, 
         {
             "location": "/tp5/", 
-            "text": "TP5 - API Management avec Atom et Anypoint(MuleSoft)", 
+            "text": "TP5 - API Management avec Atom et Anypoint", 
             "title": "TP5"
         }, 
         {
-            "location": "/tp5/#tp5-api-management-avec-atom-et-anypointmulesoft", 
+            "location": "/tp5/#tp5-api-management-avec-atom-et-anypoint", 
             "text": "", 
-            "title": "TP5 - API Management avec Atom et Anypoint(MuleSoft)"
+            "title": "TP5 - API Management avec Atom et Anypoint"
         }
     ]
 }

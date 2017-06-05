@@ -2,48 +2,73 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Welcome to MkDocs\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nCupcake indexer is a snazzy new project for indexing small cakes.\n\n\n\n\nAbove: Cupcakeeeee indexer in progress\n\n\nhttp://liliasfaxi.wix.com\n\n\n\n\n\n\n\n\nFirst Header\n\n\nSecond Header\n\n\nThird Header\n\n\n\n\n\n\n\n\n\n\nLeft\n\n\nCenter\n\n\nRight\n\n\n\n\n\n\nLeft\n\n\nCenter\n\n\nRight\n\n\n\n\n\n\n\n\nHi\n\n\ndef\n \nfn\n():\n\n    \npass\n\n\n\n\n\n\n\nPhasellus posuere in sem ut cursus\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.\n\n\n\n\n\n\nWarning\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.\n\n\n\n\nhello\n\n\n\n\nDanger\n\n\nmytext\n\n\n\n\nFootnotes\n\n\nLorem ipsum\n1\n dolor sit amet, consectetur adipiscing elit.\n2\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.\n\n\n\n\n\n\n\n\n\n\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\n\n\n\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.", 
+            "text": "Travaux Pratiques eServices\n\n\nGL5 - INSAT\n\n\n\n\n\n\nCours Disponible ici: \nhttp://liliasfaxi.wix.com/liliasfaxi/eservices\n\n\nPiazza : \nhttps://piazza.com/class/j3k0yr6cyex4n8\n\n\nRepo Github :  \nhttps://github.com/INSATunisia\n\n\n\n\nOverview\n\n\nL'objectif de ce cours est d'initier les \u00e9tudiants aux architectures \u00e0 base de services en g\u00e9n\u00e9ral. Le cours va concerner principalement les points suivants:\n\n\n\n\nL'architecture orient\u00e9e services (SOA: Service-Oriented Architecture)\n\n\nLa composition de services: orchestration et chor\u00e9graphie\n\n\nLes bus de services (ESB: Enterprise Service Bus)\n\n\nLes Microservices\n\n\nLe API Management\n\n\nL'architecture orient\u00e9e web (WOA: Web-Oriented Architecture)\n\n\n\n\nCe cours comporte cinq s\u00e9ances de travaux pratiques:\n\n\n\n\nTP1: Manipulation des services SOAP et REST avec Talend\n\n\nTP2: Orchestration des services avec BPEL\n\n\nTP3: Mise en place d'un ESB avec Talend ESB\n\n\nTP4: Microservices\n\n\nTP5: API Management avec Anypoint", 
             "title": "Home"
         }, 
         {
-            "location": "/#welcome-to-mkdocs", 
-            "text": "For full documentation visit  mkdocs.org .", 
-            "title": "Welcome to MkDocs"
+            "location": "/#travaux-pratiques-eservices", 
+            "text": "", 
+            "title": "Travaux Pratiques eServices"
         }, 
         {
-            "location": "/#commands", 
-            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.   Cupcake indexer is a snazzy new project for indexing small cakes.   Above: Cupcakeeeee indexer in progress  http://liliasfaxi.wix.com     First Header  Second Header  Third Header      Left  Center  Right    Left  Center  Right     Hi  def   fn (): \n     pass    Phasellus posuere in sem ut cursus  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.    Warning  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.   hello   Danger  mytext", 
-            "title": "Commands"
+            "location": "/#gl5-insat", 
+            "text": "Cours Disponible ici:  http://liliasfaxi.wix.com/liliasfaxi/eservices  Piazza :  https://piazza.com/class/j3k0yr6cyex4n8  Repo Github :   https://github.com/INSATunisia", 
+            "title": "GL5 - INSAT"
         }, 
         {
-            "location": "/#footnotes", 
-            "text": "Lorem ipsum 1  dolor sit amet, consectetur adipiscing elit. 2", 
-            "title": "Footnotes"
+            "location": "/#overview", 
+            "text": "L'objectif de ce cours est d'initier les \u00e9tudiants aux architectures \u00e0 base de services en g\u00e9n\u00e9ral. Le cours va concerner principalement les points suivants:   L'architecture orient\u00e9e services (SOA: Service-Oriented Architecture)  La composition de services: orchestration et chor\u00e9graphie  Les bus de services (ESB: Enterprise Service Bus)  Les Microservices  Le API Management  L'architecture orient\u00e9e web (WOA: Web-Oriented Architecture)   Ce cours comporte cinq s\u00e9ances de travaux pratiques:   TP1: Manipulation des services SOAP et REST avec Talend  TP2: Orchestration des services avec BPEL  TP3: Mise en place d'un ESB avec Talend ESB  TP4: Microservices  TP5: API Management avec Anypoint", 
+            "title": "Overview"
         }, 
         {
-            "location": "/#project-layout", 
-            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.      Lorem ipsum dolor sit amet, consectetur adipiscing elit.    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.", 
-            "title": "Project layout"
+            "location": "/tp1/", 
+            "text": "TP1 - Services Web REST et SOAP avec Talend", 
+            "title": "TP1"
         }, 
         {
-            "location": "/about/", 
-            "text": "Welcome to MkDocs\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
-            "title": "About"
+            "location": "/tp1/#tp1-services-web-rest-et-soap-avec-talend", 
+            "text": "", 
+            "title": "TP1 - Services Web REST et SOAP avec Talend"
         }, 
         {
-            "location": "/about/#welcome-to-mkdocs", 
-            "text": "For full documentation visit  mkdocs.org .", 
-            "title": "Welcome to MkDocs"
+            "location": "/tp2/", 
+            "text": "TP2 - Processus M\u00e9tier BPEL avec WSO2", 
+            "title": "TP2"
         }, 
         {
-            "location": "/about/#commands", 
-            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.", 
-            "title": "Commands"
+            "location": "/tp2/#tp2-processus-metier-bpel-avec-wso2", 
+            "text": "", 
+            "title": "TP2 - Processus M\u00e9tier BPEL avec WSO2"
         }, 
         {
-            "location": "/about/#project-layout", 
-            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
-            "title": "Project layout"
+            "location": "/tp3/", 
+            "text": "TP3 - Mise en Place d\u2019un ESB avec Talend ESB", 
+            "title": "TP3"
+        }, 
+        {
+            "location": "/tp3/#tp3-mise-en-place-dun-esb-avec-talend-esb", 
+            "text": "", 
+            "title": "TP3 - Mise en Place d\u2019un ESB avec Talend ESB"
+        }, 
+        {
+            "location": "/tp4/", 
+            "text": "TP4 - Microservices", 
+            "title": "TP4"
+        }, 
+        {
+            "location": "/tp4/#tp4-microservices", 
+            "text": "", 
+            "title": "TP4 - Microservices"
+        }, 
+        {
+            "location": "/tp5/", 
+            "text": "TP5 - API Management avec Atom et Anypoint(MuleSoft)", 
+            "title": "TP5"
+        }, 
+        {
+            "location": "/tp5/#tp5-api-management-avec-atom-et-anypointmulesoft", 
+            "text": "", 
+            "title": "TP5 - API Management avec Atom et Anypoint(MuleSoft)"
         }
     ]
 }

@@ -923,6 +923,9 @@ service.</li>
 <li>Cliquer sur <em>Guess Schema</em>  pour charger le schéma de la base.</li>
 <li>Changer la requête pour qu'elle soit comme suit:</li>
 </ul>
+<div class="codehilite"><pre><span></span><span class="ss">&quot;SELECT * FROM `user` where id&gt;=&quot;</span><span class="o">+</span><span class="n">globalMap</span><span class="p">.</span><span class="k">get</span><span class="p">(</span><span class="ss">&quot;getUsers.from&quot;</span><span class="p">)</span><span class="o">+</span><span class="ss">&quot; and id&lt;=&quot;</span><span class="o">+</span><span class="n">globalMap</span><span class="p">.</span><span class="k">get</span><span class="p">(</span><span class="ss">&quot;getUsers.to&quot;</span><span class="p">)</span>
+</pre></div>
+
 <div class="admonition remarque">
 <p class="admonition-title">Remarque</p>
 <p>globalMap est une variable globale permettant de stocker les informations de la requête, comme par exemple ses paramètres.</p>

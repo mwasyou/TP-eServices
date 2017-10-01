@@ -9,7 +9,7 @@
         <meta name="description" content="Les Travaux Pratiques du cours eServices">
       
       
-        <link rel="canonical" href="http://liliasfaxi.github.io/tp-eServices/tp1/">
+        <link rel="canonical" href="http://liliasfaxi.github.io/TP-eServices/tp1/">
       
       
         <meta name="author" content="Lilia Sfaxi">
@@ -69,7 +69,7 @@
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href="http://liliasfaxi.github.io/tp-eServices/" title="TP eServices" class="md-logo md-header-nav__button">
+          <a href="http://liliasfaxi.github.io/TP-eServices/" title="TP eServices" class="md-logo md-header-nav__button">
             <img src="../img/logo.png" width="24" height="24">
           </a>
         
@@ -122,7 +122,7 @@
   
 
 
-  <a href="https://github.com/liliasfaxi/tp-eServices" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/liliasfaxi/TP-eServices" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -131,7 +131,7 @@
       </div>
     
     <div class="md-source__repository">
-      liliasfaxi/tp-eServices
+      liliasfaxi/TP-eServices
     </div>
   </a>
 
@@ -169,7 +169,7 @@
   
 
 
-  <a href="https://github.com/liliasfaxi/tp-eServices" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/liliasfaxi/TP-eServices" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -178,7 +178,7 @@
       </div>
     
     <div class="md-source__repository">
-      liliasfaxi/tp-eServices
+      liliasfaxi/TP-eServices
     </div>
   </a>
 
@@ -229,6 +229,13 @@
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#telecharger-pdf" title="Télécharger PDF" class="md-nav__link">
+    Télécharger PDF
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#objectifs-du-tp" title="Objectifs du TP" class="md-nav__link">
@@ -486,6 +493,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#telecharger-pdf" title="Télécharger PDF" class="md-nav__link">
+    Télécharger PDF
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#objectifs-du-tp" title="Objectifs du TP" class="md-nav__link">
     Objectifs du TP
   </a>
@@ -680,6 +694,8 @@
                 
                 <h1 id="tp1-services-web-rest-et-soap-avec-talend">TP1 - Services Web REST et SOAP avec Talend<a class="headerlink" href="#tp1-services-web-rest-et-soap-avec-talend" title="Permanent link">&para;</a></h1>
 <p><img alt="Web Services" src="../img/ws.png" /></p>
+<h2 id="telecharger-pdf">Télécharger PDF<a class="headerlink" href="#telecharger-pdf" title="Permanent link">&para;</a></h2>
+<p><a href="../tp1.pdf"><img alt="Download TP1" src="../img/pdf.png" /></a></p>
 <h2 id="objectifs-du-tp">Objectifs du TP<a class="headerlink" href="#objectifs-du-tp" title="Permanent link">&para;</a></h2>
 <p>Création et consommation de web services SOAP et REST en utilisant l'outil Talend.</p>
 <h2 id="outils-et-versions">Outils et Versions<a class="headerlink" href="#outils-et-versions" title="Permanent link">&para;</a></h2>
@@ -797,8 +813,10 @@ réponse, en lui concaténant le célèbre "Hello". Pour cela:</p>
 <li>Refaire les mêmes étapes pour le payload de la sortie, en choisissant <em>HelloWorldServiceOperationResponse</em>.</li>
 <li>Relier le <em>in</em> de la requête avec le <em>out</em> de la réponse (créer l’entrée comme sous-élément de la réponse)</li>
 <li>Modifier l’expression du <em>out</em> en ajoutant la chaîne <strong>“Hello “</strong> avant la valeur <em>in</em> de l’entrée.</li>
-<li>Le résultat de la XMLMap devrait ressembler à ce qui suit:
-<img alt="XML Map" src="../img/tp1/hw-xml-map.png" /></li>
+<li>Le résultat de la XMLMap devrait ressembler à ce qui suit:</li>
+</ul>
+<p><img alt="XML Map" src="../img/tp1/hw-xml-map.png" /></p>
+<ul>
 <li>Sauvegarder et quitter.</li>
 </ul>
 </li>
@@ -824,9 +842,9 @@ Vérifier que votre fichier WSDL existe bien.</p>
 <p>Nous allons maintenant créer un consommateur pour notre service avec talend open studio. Pour cela:</p>
 <ul>
 <li>Créer un nouveau Job, que vous appellerez <em>HelloWorldServiceConsumer</em>.</li>
-<li>Concevez votre job de manière à ce qu’il ait l’allure suivante:
-<img alt="Soap Consommateur Job" src="../img/tp1/hw-conso.png" /></li>
+<li>Concevez votre job de manière à ce qu’il ait l’allure suivante:</li>
 </ul>
+<p><img alt="Soap Consommateur Job" src="../img/tp1/hw-conso.png" /></p>
 <p>Voici les rôles des éléments que vous avez ajouté:</p>
 <div class="codehilite"><pre><span></span>* tFixedFlowInput : définir les entrées à envoyer à votre service
 * tXMLMap : associer les entrées définies aux entrées du service
@@ -849,15 +867,15 @@ vous avez créé. Vérifiez bien que le Endpoint soit sur le port 8090.</p>
 </li>
 <li>Configurer votre <em>tXMLMap</em> pour que la variable <em>Nom</em> soit associée au <em>in</em> de votre
 service.</li>
-<li>Exécuter le Job, et observez le résultat. Votre console devrait afficher le résultat suivant:
-<img alt="Helloworld Résultat" src="../img/tp1/hw-result.png" /></li>
+<li>Exécuter le Job, et observez le résultat. Votre console devrait afficher le résultat suivant:</li>
 </ul>
+<p><img alt="Helloworld Résultat" src="../img/tp1/hw-result.png" /></p>
 <h2 id="service-web-rest-interrogation-dune-base-de-donnees">Service Web REST : Interrogation d'une base de données<a class="headerlink" href="#service-web-rest-interrogation-dune-base-de-donnees" title="Permanent link">&para;</a></h2>
 <p>Nous allons maintenant montrer comment exposer un service REST pour interroger une base de données.</p>
 <h3 id="creation-de-la-base-de-donnees">Création de la base de données<a class="headerlink" href="#creation-de-la-base-de-donnees" title="Permanent link">&para;</a></h3>
 <p>Nous allons commencer par créer une base de données (MySQL dans mon cas), appelée <em>eservices-tp1</em> avec une table, que nous appellerons <em>user</em>. Cette table contient les champs <em>id</em>, <em>firstname</em> et <em>lastname</em>. Remplir ensuite la base à votre guise, de manière à avoir au moins 4 entrées.</p>
-<p>Elle devra ressembler à ce qui suit:
-<img alt="Base de données" src="../img/tp1/rest-db.png" /></p>
+<p>Elle devra ressembler à ce qui suit:</p>
+<p><img alt="Base de données" src="../img/tp1/rest-db.png" /></p>
 <h3 id="ajout-de-la-connexion-a-la-base-avec-talend">Ajout de la connexion à la base avec Talend<a class="headerlink" href="#ajout-de-la-connexion-a-la-base-avec-talend" title="Permanent link">&para;</a></h3>
 <p>Pour configurer une connexion à cette base de données avec Talend, suivre les étapes suivantes:</p>
 <ul>
@@ -875,7 +893,7 @@ service.</li>
 <li><strong>tRestRequest</strong> : Pour définir la requête REST que le client doit appeler</li>
 <li><strong>user</strong> : Table de la base de données. Dans la nouvelle connexion à la base de données que vous avez créé, sous <em>Schémas des tables</em>, glisser la table <em>user</em> vers le Job, puis choisir tMySQLInput dans la fenêtre de choix qui apparaît.</li>
 </ul>
-<div class="admonition note">
+<div class="admonition tip">
 <p class="admonition-title">Remarque</p>
 <p>Je choisis <em>tMySQLInput</em> car, dans mon cas, c'est une base de données MySQL, et je veux juste lire son contenu, je vais donc y accéder en entrée (d'où le <em>Input</em>).</p>
 </div>
@@ -885,8 +903,8 @@ service.</li>
 <li><strong>tRestResponse</strong> : Pour définir la réponse à envoyer à l'utilisateur suite à sa requête.</li>
 <li><strong>tLogRow</strong> : Pour le log, bien sûr.</li>
 </ul>
-<p>Le job aura l'allure suivante:
-<img alt="Service REST" src="../img/tp1/rest-service.png" /></p>
+<p>Le job aura l'allure suivante:</p>
+<p><img alt="Service REST" src="../img/tp1/rest-service.png" /></p>
 <h3 id="configuration-du-service-rest">Configuration du service REST<a class="headerlink" href="#configuration-du-service-rest" title="Permanent link">&para;</a></h3>
 <p>Nous désirons configurer le service de manière à ce que, quand un consommateur appelle l'URI:
 <code>http://localhost:8088/users?from=1&amp;to=3</code>, le service retourne une réponse contenant les utilisateurs (id, nom et prénom) de la base de données dont les ids figurent entre 1 et 3.  </p>
@@ -903,14 +921,14 @@ service.</li>
 <li>Leur type soit <em>int</em></li>
 <li>Leurs valeurs par défaut soient respectivement 1 et 3.</li>
 </ul>
-<div class="admonition remarque">
+<div class="admonition tip">
 <p class="admonition-title">Remarque</p>
 <p>Ces valeurs seront utilisées dans le cas où le consommateur n'introduit pas de paramètres.</p>
 </div>
 <ul>
 <li>Leur commentaire ait la valeur: <em>query</em></li>
 </ul>
-<div class="admonition remarque">
+<div class="admonition tip">
 <p class="admonition-title">Remarque</p>
 <p>Cela indique que ces champs sont des paramètres de requête, pas définies dans le Path.</p>
 </div>
@@ -923,10 +941,11 @@ service.</li>
 <li>Cliquer sur <em>Guess Schema</em>  pour charger le schéma de la base.</li>
 <li>Changer la requête pour qu'elle soit comme suit:</li>
 </ul>
-<div class="codehilite"><pre><span></span><span class="ss">&quot;SELECT * FROM `user` where id&gt;=&quot;</span><span class="o">+</span><span class="n">globalMap</span><span class="p">.</span><span class="k">get</span><span class="p">(</span><span class="ss">&quot;getUsers.from&quot;</span><span class="p">)</span><span class="o">+</span><span class="ss">&quot; and id&lt;=&quot;</span><span class="o">+</span><span class="n">globalMap</span><span class="p">.</span><span class="k">get</span><span class="p">(</span><span class="ss">&quot;getUsers.to&quot;</span><span class="p">)</span>
+<div class="codehilite"><pre><span></span><span class="ss">&quot;SELECT * FROM `user` where id&gt;=&quot;</span><span class="o">+</span><span class="n">globalMap</span><span class="p">.</span><span class="k">get</span><span class="p">(</span><span class="ss">&quot;getUsers.from&quot;</span><span class="p">)</span><span class="o">+</span>
+                      <span class="ss">&quot; and id&lt;=&quot;</span><span class="o">+</span><span class="n">globalMap</span><span class="p">.</span><span class="k">get</span><span class="p">(</span><span class="ss">&quot;getUsers.to&quot;</span><span class="p">)</span>
 </pre></div>
 
-<div class="admonition remarque">
+<div class="admonition tip">
 <p class="admonition-title">Remarque</p>
 <p>globalMap est une variable globale permettant de stocker les informations de la requête, comme par exemple ses paramètres.</p>
 </div>
@@ -1072,7 +1091,7 @@ Si aucun paramètre n'est indiqué: <code>http://localhost:8088/users</code> cel
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2016 - 2017 Lilia Sfaxi
+            Copyright &copy; 2017 - 2018 Lilia Sfaxi
           </div>
         
         powered by

@@ -17,7 +17,7 @@
       
         <link rel="shortcut icon" href="../img/favicon.ico">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.1">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-1.7.1">
     
     
       
@@ -122,7 +122,7 @@
   
 
 
-  <a href="https://github.com/liliasfaxi/TP-eServices" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/liliasfaxi/TP-eServices/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -169,7 +169,7 @@
   
 
 
-  <a href="https://github.com/liliasfaxi/TP-eServices" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/liliasfaxi/TP-eServices/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -192,8 +192,8 @@
 
 
   <li class="md-nav__item">
-    <a href=".." title="Home" class="md-nav__link">
-      Home
+    <a href=".." title="Travaux Pratiques eServices" class="md-nav__link">
+      Travaux Pratiques eServices
     </a>
   </li>
 
@@ -783,6 +783,8 @@
             <article class="md-content__inner md-typeset">
               
                 
+                  <a href="https://github.com/liliasfaxi/TP-eServices/edit/master/docs/tp3.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
+                
                 
                 <h1 id="tp3-mise-en-place-dun-esb-avec-talend-esb">TP3 - Mise en Place d’un ESB avec Talend ESB<a class="headerlink" href="#tp3-mise-en-place-dun-esb-avec-talend-esb" title="Permanent link">&para;</a></h1>
 <p><img alt="ESB" src="../img/esb.png" /></p>
@@ -867,14 +869,14 @@
 <p>Configurer la condition <em>when</em>, en précisant que c’est une condition de type simple, dont le texte est :</p>
 </li>
 </ul>
-<p><div class="codehilite"><pre><span></span>    &quot;${bodyAs(String)} contains &#39;Alice&#39;&quot;
+<p><div class="codehilite"><pre><span></span>    <span class="s2">&quot;</span><span class="si">${</span><span class="nv">bodyAs</span><span class="p">(String)</span><span class="si">}</span><span class="s2"> contains &#39;Alice&#39;&quot;</span>
 </pre></div>
   Cela veut dire que, si le corps du message contient <em>Alice</em>, la requête sera routée vers le composant <em>cCXF_2</em>.</p>
 <ul>
 <li>
 <p>Configurer le composant cCXF_1:</p>
 <ul>
-<li>Adresse: <a href="http://localhost:8042/services/HelloWorldService">http://localhost:8042/services/HelloWorldService</a>  </li>
+<li>Adresse: <a href="http://localhost:8042/services/HelloWorldService">http://localhost:8042/services/HelloWorldService</a></li>
 <li>WSDL: <a href="http://localhost:8040/services/HelloWorldService?WSDL">http://localhost:8040/services/HelloWorldService?WSDL</a>.</li>
 </ul>
 </li>
@@ -946,7 +948,7 @@
 </ol>
 <h5 id="1-deploiement-du-sl-dans-le-contenaire">1. Déploiement du SL dans le contenaire<a class="headerlink" href="#1-deploiement-du-sl-dans-le-contenaire" title="Permanent link">&para;</a></h5>
 <p>Pour tester sa capacité à gérer le failover et la répartition des charges, le SL doit être déployé dans les différents conteneurs de services où sera déployé votre service. Pour cela, taper dans l’invite de commande de chaque conteneur ESB:</p>
-<div class="codehilite"><pre><span></span>  tesb:start-locator
+<div class="codehilite"><pre><span></span><span class="na">  tesb</span><span class="o">:</span><span class="s">start-locator</span>
 </pre></div>
 
 <p>Il est possible de visualiser votre SL dans la liste des services déployés sur le conteneur en tapant list sur votre terminal. Vous devriez trouver les lignes suivantes:</p>
@@ -970,7 +972,7 @@
 <ol>
 <li>
 <p>Déployer SAM au niveau du conteneur d’exécution Talend. Pour cela, taper :
-<div class="codehilite"><pre><span></span>tesb:start-sam
+<div class="codehilite"><pre><span></span><span class="na">tesb</span><span class="o">:</span><span class="s">start-sam</span>
 </pre></div>
   Vous remarquerez qu’une base de données Derby sera également déployée sur le conteneur: elle permet de stocker les informations sur l’activité des services.</p>
 </li>
@@ -1014,7 +1016,7 @@
 </ol>
 <h5 id="1-deployer-sts-dans-le-conteneur-dexecution">1. Déployer STS dans le conteneur d’exécution<a class="headerlink" href="#1-deployer-sts-dans-le-conteneur-dexecution" title="Permanent link">&para;</a></h5>
 <p>Pour installer le service STS dans votre conteneur, démarrer ce dernier, et taper l’instruction suivante dans le terminal:
-<div class="codehilite"><pre><span></span>    feature:install tesb-sts
+<div class="codehilite"><pre><span></span><span class="na">    feature</span><span class="o">:</span><span class="s">install tesb-sts</span>
 </pre></div></p>
 <p>Si le service a bien été installé, vous pouvez vérifier qu’il est bien démarré en exécutant la commande : <em>list</em>. Vous devriez trouver les lignes suivantes:</p>
 <p><center><img src="../img/tp3/activ-sts.png"></center></p>
@@ -1119,6 +1121,10 @@
       
       
       <script>app.initialize({url:{base:".."}})</script>
+      
+        <script src="../search/require.js"></script>
+      
+        <script src="../search/search.js"></script>
       
     
     

@@ -45,6 +45,14 @@
     
     
     
+
+    <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+    <link rel="stylesheet" href="../css/highlight.css">
+    <link rel="stylesheet" href="../css/codehilite.css">
+    <link rel="stylesheet" href="../css/tooltip.css">
+
+    <link rel="stylesheet" href="../css/customizations.css">
+    <link rel="stylesheet" href="../css/site-customizations.css">
   </head>
   
   
@@ -870,7 +878,7 @@
 </li>
 </ul>
 <p><div class="codehilite"><pre><span></span>    <span class="s2">&quot;</span><span class="si">${</span><span class="nv">bodyAs</span><span class="p">(String)</span><span class="si">}</span><span class="s2"> contains &#39;Alice&#39;&quot;</span>
-</pre></div>
+</pre></div><br />
   Cela veut dire que, si le corps du message contient <em>Alice</em>, la requête sera routée vers le composant <em>cCXF_2</em>.</p>
 <ul>
 <li>
@@ -971,9 +979,9 @@
 <p>Pour configurer le Service Activity Monitoring:</p>
 <ol>
 <li>
-<p>Déployer SAM au niveau du conteneur d’exécution Talend. Pour cela, taper :
+<p>Déployer SAM au niveau du conteneur d’exécution Talend. Pour cela, taper :<br />
 <div class="codehilite"><pre><span></span><span class="na">tesb</span><span class="o">:</span><span class="s">start-sam</span>
-</pre></div>
+</pre></div><br />
   Vous remarquerez qu’une base de données Derby sera également déployée sur le conteneur: elle permet de stocker les informations sur l’activité des services.</p>
 </li>
 <li>
@@ -1015,7 +1023,7 @@
 <li>Configurer votre client pour saisir les paramètres d’authentification.</li>
 </ol>
 <h5 id="1-deployer-sts-dans-le-conteneur-dexecution">1. Déployer STS dans le conteneur d’exécution<a class="headerlink" href="#1-deployer-sts-dans-le-conteneur-dexecution" title="Permanent link">&para;</a></h5>
-<p>Pour installer le service STS dans votre conteneur, démarrer ce dernier, et taper l’instruction suivante dans le terminal:
+<p>Pour installer le service STS dans votre conteneur, démarrer ce dernier, et taper l’instruction suivante dans le terminal:<br />
 <div class="codehilite"><pre><span></span><span class="na">    feature</span><span class="o">:</span><span class="s">install tesb-sts</span>
 </pre></div></p>
 <p>Si le service a bien été installé, vous pouvez vérifier qu’il est bien démarré en exécutant la commande : <em>list</em>. Vous devriez trouver les lignes suivantes:</p>
@@ -1117,6 +1125,8 @@
       
     </div>
     
+      <script src="../assets/javascripts/raphael-min.js"></script>
+      <script src="../assets/javascripts/flowchart.js"></script>
       <script src="../assets/javascripts/application-e3caa82af6.js"></script>
       
       

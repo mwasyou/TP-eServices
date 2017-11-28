@@ -45,6 +45,14 @@
     
     
     
+
+    <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+    <link rel="stylesheet" href="../css/highlight.css">
+    <link rel="stylesheet" href="../css/codehilite.css">
+    <link rel="stylesheet" href="../css/tooltip.css">
+
+    <link rel="stylesheet" href="../css/customizations.css">
+    <link rel="stylesheet" href="../css/site-customizations.css">
   </head>
   
   
@@ -693,9 +701,9 @@
 <p>Pour tester votre application, ouvrir la page <a href="http://localhost:8080">http://localhost:8080</a> sur le navigateur. Vous obtiendrez (si tout se passe bien) le résultat suivant:</p>
 <p><img alt="Service REST" src="../img/tp4/rest1.png" /></p>
 <p>Vous remarquerez que le service REST créé respecte automatiquement la norme <a href="https://spring.io/understanding/HATEOAS">HATEOAS</a>, qui offre dans les services REST, les liens pour naviguer dynamiquement entre les interfaces.</p>
-<p>Si vous naviguez vers la page <a href="http://localhost:8080/produits">http://localhost:8080/produits</a>, vous verrez la liste des produits, injectés par le CLR, comme suit:</p>
+<p>Si vous naviguez vers la page <a href="http://localhost:8080/products">http://localhost:8080/products</a>, vous verrez la liste des produits, injectés par le CLR, comme suit:</p>
 <p><img alt="Liste Produits" src="../img/tp4/products.png" /></p>
-<p>Pour voir les informations relatives à un seul produit, il suffit de connaître son ID: <a href="http://localhost:8080/produits/1">http://localhost:8080/produits/1</a>, par exemple.</p>
+<p>Pour voir les informations relatives à un seul produit, il suffit de connaître son ID: <a href="http://localhost:8080/products/1">http://localhost:8080/products/1</a>, par exemple.</p>
 <p>Pour rajouter une fonctionnalité de recherche par nom, par exemple, modifier l'interface <em>ProductRepository</em>, comme suit:</p>
 <p><div class="codehilite"><pre><span></span><span class="kn">package</span> <span class="nn">tn.insat.tpmicro.productservice</span><span class="o">;</span>
 
@@ -713,7 +721,7 @@
     <span class="kd">public</span> <span class="n">Page</span><span class="o">&lt;</span><span class="n">Product</span><span class="o">&gt;</span> <span class="nf">productByName</span><span class="o">(</span><span class="nd">@Param</span><span class="o">(</span><span class="s">&quot;name&quot;</span><span class="o">)</span> <span class="n">String</span> <span class="n">mc</span>
             <span class="o">,</span> <span class="n">Pageable</span> <span class="n">pageable</span><span class="o">);</span>
 <span class="o">}</span>
-</pre></div>
+</pre></div><br />
 Pour tester cette fonctionnalité de recherche, aller au lien <a href="http://localhost:8080/products/search/productByName?name=Eraser">http://localhost:8080/products/search/productByName?name=Eraser</a></p>
 <p>Le résultat obtenu sera le suivant:</p>
 <p><img alt="Résultat de la recherche par nom" src="../img/tp4/search.png" /></p>
@@ -988,7 +996,7 @@ Pour tester cette fonctionnalité de recherche, aller au lien <a href="http://lo
 <h2 id="homework">Homework<a class="headerlink" href="#homework" title="Permanent link">&para;</a></h2>
 <p>Le concept de microservices est très fortement lié à la culture DevOps, et à la conteneurisation. Grâce aux conteneurs, vous n’avez pas besoin de développer et de configurer entièrement un nouveau serveur physique, ni de mettre sur pied un nouvel environnement virtuel, ce qui requiert une émulation de processeur, un système d’exploitation et des logiciels installés. Le conteneur vous permet de faire tenir un environnement complet dans une seule image légère.</p>
 <p>C'est pour cela que votre tâche pour la séance prochaine sera de <em>dockeriser</em> les différents microservices que nous venons de créer, au lieu de les lancer sur notre machine physique (localhost). Les trois instances du service ProductService, ainsi que les trois autres services (Discovery, Config et Proxy) doivent tourner indépendamment, chacun dans soon propre contenaire.</p>
-<p>Vous devez fournir chacun un lien vers un projet <strong>Github</strong> contenant vos projets, ainsi qu'un <strong>Readme</strong> en bonne et due forme (respecter la norme Markdown svp) montrant les étapes de conteneurisation des services. Chaque binôme devra fournir son lien dans le fichier excel intitulé <em>Homework</em> que vous trouverez dans <a href="https://piazza.com/class/j3k0yr6cyex4n8">Piazza</a>. </p>
+<p>Vous devez fournir chacun un lien vers un projet <strong>Github</strong> contenant vos projets, ainsi qu'un <strong>Readme</strong> en bonne et due forme (respecter la norme Markdown svp) montrant les étapes de conteneurisation des services. Chaque binôme devra fournir son lien dans le fichier excel intitulé <em>Homework</em> que vous trouverez dans <a href="https://piazza.com/class/j3k0yr6cyex4n8">Piazza</a>.</p>
                 
                   
                 
@@ -1076,6 +1084,8 @@ Pour tester cette fonctionnalité de recherche, aller au lien <a href="http://lo
       
     </div>
     
+      <script src="../assets/javascripts/raphael-min.js"></script>
+      <script src="../assets/javascripts/flowchart.js"></script>
       <script src="../assets/javascripts/application-e3caa82af6.js"></script>
       
       

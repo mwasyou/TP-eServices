@@ -45,6 +45,14 @@
     
     
     
+
+    <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+    <link rel="stylesheet" href="../css/highlight.css">
+    <link rel="stylesheet" href="../css/codehilite.css">
+    <link rel="stylesheet" href="../css/tooltip.css">
+
+    <link rel="stylesheet" href="../css/customizations.css">
+    <link rel="stylesheet" href="../css/site-customizations.css">
   </head>
   
   
@@ -708,11 +716,11 @@
 <li><a href="https://www.soapui.org/downloads/soapui.html">SOAPUI</a> Version 5.3.0</li>
 </ul>
 <h2 id="talend-esb">Talend ESB<a class="headerlink" href="#talend-esb" title="Permanent link">&para;</a></h2>
-<p>Talend ESB est une solution légère, robuste et modulaire pour la création de services
-web sécurisés ainsi que pour l’intégration d’applications nouvelles ou existantes.
-Talend participe au développement des composants ESB à travers la communauté
-Apache. Il collabore avec un grand nombre de développeurs de la communauté Apache
-et a fait plusieurs contributions aux projets Apache.
+<p>Talend ESB est une solution légère, robuste et modulaire pour la création de services<br />
+web sécurisés ainsi que pour l’intégration d’applications nouvelles ou existantes.<br />
+Talend participe au développement des composants ESB à travers la communauté<br />
+Apache. Il collabore avec un grand nombre de développeurs de la communauté Apache<br />
+et a fait plusieurs contributions aux projets Apache.<br />
 Talend fournit:</p>
 <ul>
 <li>Un courtier de messages à haute performance.</li>
@@ -723,26 +731,26 @@ Talend fournit:</p>
 <li>La médiation et le routage</li>
 <li>Support pour le failover, le monitoring et la sécurité</li>
 </ul>
-<p>L’environnement d’exécution standard de Talend ESB est un conteneur OSGi.
-L’implémentation OSGi fournie avec Talend ESB est Apache Karaf, avec Eclipse Equinox
-comme environnement d’exécution OSGi. Elle fournit un conteneur léger dans lequel les
+<p>L’environnement d’exécution standard de Talend ESB est un conteneur OSGi.<br />
+L’implémentation OSGi fournie avec Talend ESB est Apache Karaf, avec Eclipse Equinox<br />
+comme environnement d’exécution OSGi. Elle fournit un conteneur léger dans lequel les<br />
 différents composants et applications peuvent être déployées.</p>
 <h2 id="talend-open-studio-for-esb">Talend Open Studio for ESB<a class="headerlink" href="#talend-open-studio-for-esb" title="Permanent link">&para;</a></h2>
-<p>Talend Open Studio for ESB (TOS-ESB) fournit une interface graphique de
-développement pour implémenter, compiler, tester et publier des services Web Java, des
-applications REST, des services de données et des routes de messages.
-Le déploiement d’applications avec TOS-ESB utilise principalement les trois blocs
+<p>Talend Open Studio for ESB (TOS-ESB) fournit une interface graphique de<br />
+développement pour implémenter, compiler, tester et publier des services Web Java, des<br />
+applications REST, des services de données et des routes de messages.<br />
+Le déploiement d’applications avec TOS-ESB utilise principalement les trois blocs<br />
 représentés dans cette figure:</p>
 <p><img alt="Talend" src="../img/tp1/talend.png" /></p>
 <ul>
-<li>Le bloc bleu représente l’API Talend Studio, où il est possible d’intégrer des
+<li>Le bloc bleu représente l’API Talend Studio, où il est possible d’intégrer des<br />
 données, des services ou des applications</li>
-<li>Les blocs rouges représentent un ou plusieurs environnements d’exécution Talend
-déployés dans votre système d’information. Il vous permet de déployer et
-d’exécuter les Jobs, les routes et les services créés dans Talend Studio. Il est
-possible d’avoir plusieurs environnements d’exécution, entre lesquels vous pouvez
+<li>Les blocs rouges représentent un ou plusieurs environnements d’exécution Talend<br />
+déployés dans votre système d’information. Il vous permet de déployer et<br />
+d’exécuter les Jobs, les routes et les services créés dans Talend Studio. Il est<br />
+possible d’avoir plusieurs environnements d’exécution, entre lesquels vous pouvez<br />
 basculer grâce à Talend Service Locator.</li>
-<li>Le bloc orange est une base de données de monitoring, permettant de stocker les
+<li>Le bloc orange est une base de données de monitoring, permettant de stocker les<br />
 informations d’exécution des processus et de l’activité des services.</li>
 </ul>
 <p>L’interface utilisateur de TOS-ESB se présente comme suit:</p>
@@ -778,35 +786,35 @@ informations d’exécution des processus et de l’activité des services.</li>
 </tbody>
 </table>
 <h2 id="service-web-soap-helloworld">Service Web SOAP : Helloworld<a class="headerlink" href="#service-web-soap-helloworld" title="Permanent link">&para;</a></h2>
-<p>Nous ne pouvons pas configurer un ESB avant de savoir créer, déployer et exécuter des
-services web avec les outils Talend ESB. Nous allons donc commencer avec le
-traditionnel Hello World. Pour cela, il faut commencer par créer un projet de votre choix.
+<p>Nous ne pouvons pas configurer un ESB avant de savoir créer, déployer et exécuter des<br />
+services web avec les outils Talend ESB. Nous allons donc commencer avec le<br />
+traditionnel Hello World. Pour cela, il faut commencer par créer un projet de votre choix.<br />
 Dans toute cette partie, nous nous trouverons dans la perspective Integration.</p>
 <h3 id="creer-le-service-soap">Créer le service SOAP<a class="headerlink" href="#creer-le-service-soap" title="Permanent link">&para;</a></h3>
 <p>Pour créer un nouveau service de type SOAP:</p>
 <ul>
-<li>Clic-droit sur <em>Services</em> de votre Repository, et choisir <em>Create Service</em>. Appeler le
+<li>Clic-droit sur <em>Services</em> de votre Repository, et choisir <em>Create Service</em>. Appeler le<br />
 service <em>HelloWorldService</em>. Cliquer sur Suivant.</li>
 <li>On vous propose soit de créer un nouveau WSDL, soit de choisir un WSDL existant. Dans notre cas, nous créons un nouveau WSDL. Cliquer sur Terminer.</li>
-<li>Un service simple qui reçoit une chaîne de caractères et en produit une autre est
+<li>Un service simple qui reçoit une chaîne de caractères et en produit une autre est<br />
 créé. Une vue graphique de son WSDL s’affiche.</li>
 </ul>
 <p><img alt="HelloWorld Service" src="../img/tp1/hw-soap.png" /></p>
 <h3 id="configurer-le-service-soap">Configurer le service SOAP<a class="headerlink" href="#configurer-le-service-soap" title="Permanent link">&para;</a></h3>
 <p>Pour pouvoir configurer votre service, il faut créer un Job. Mais d’abord:</p>
 <ul>
-<li>Importer le WSDL de votre service dans votre repository. Pour cela, clic droit sur
-<em>HelloWorldService</em>, et choisir <em>Importer les schémas WSDL</em>. Vous retrouverez votre
+<li>Importer le WSDL de votre service dans votre repository. Pour cela, clic droit sur<br />
+<em>HelloWorldService</em>, et choisir <em>Importer les schémas WSDL</em>. Vous retrouverez votre<br />
 WSDL dans la partie <em>Metadonnées -&gt; Fichier XML</em>.</li>
 <li>Créer un nouveau Job pour votre service. Pour cela, clic-droit sur l’opération <em>HelloWorldServiceOperation</em> (sous Services) et choisir <em>Assign Job</em>.</li>
-<li>Modifier votre Job pour qu’il ait l’allure suivante (Le <em>tLogRow</em> nous permettra
-d’afficher le résultat du service exécuté sur la console avant de l’envoyer au
+<li>Modifier votre Job pour qu’il ait l’allure suivante (Le <em>tLogRow</em> nous permettra<br />
+d’afficher le résultat du service exécuté sur la console avant de l’envoyer au<br />
 consommateur):</li>
 </ul>
 <p><img alt="HelloWorld Job" src="../img/tp1/hw-job.png" /></p>
 <ul>
 <li>
-<p>Configurer votre tXMLMap pour que le <em>in</em> de la requête soit transmise au <em>out</em> de la
+<p>Configurer votre tXMLMap pour que le <em>in</em> de la requête soit transmise au <em>out</em> de la<br />
 réponse, en lui concaténant le célèbre "Hello". Pour cela:</p>
 <ul>
 <li>Double clic sur votre XML Map.</li>
@@ -823,7 +831,7 @@ réponse, en lui concaténant le célèbre "Hello". Pour cela:</p>
 </ul>
 </li>
 <li>
-<p>Lancer votre Job (cela permettra de publier votre service web sur le port 8090).
+<p>Lancer votre Job (cela permettra de publier votre service web sur le port 8090).<br />
 Vérifier que votre fichier WSDL existe bien.</p>
 </li>
 </ul>
@@ -865,10 +873,10 @@ Vérifier que votre fichier WSDL existe bien.</p>
 </ul>
 </li>
 <li>
-<p>Configurer votre <em>tESBConsumer</em> en lui donnant comme WSDL celui du service que
+<p>Configurer votre <em>tESBConsumer</em> en lui donnant comme WSDL celui du service que<br />
 vous avez créé. Vérifiez bien que le Endpoint soit sur le port 8090.</p>
 </li>
-<li>Configurer votre <em>tXMLMap</em> pour que la variable <em>Nom</em> soit associée au <em>in</em> de votre
+<li>Configurer votre <em>tXMLMap</em> pour que la variable <em>Nom</em> soit associée au <em>in</em> de votre<br />
 service.</li>
 <li>Exécuter le Job, et observez le résultat. Votre console devrait afficher le résultat suivant:</li>
 </ul>
@@ -909,7 +917,7 @@ service.</li>
 <p>Le job aura l'allure suivante:</p>
 <p><img alt="Service REST" src="../img/tp1/rest-service.png" /></p>
 <h3 id="configuration-du-service-rest">Configuration du service REST<a class="headerlink" href="#configuration-du-service-rest" title="Permanent link">&para;</a></h3>
-<p>Nous désirons configurer le service de manière à ce que, quand un consommateur appelle l'URI:
+<p>Nous désirons configurer le service de manière à ce que, quand un consommateur appelle l'URI:<br />
 <code>http://localhost:8088/users?from=1&amp;to=3</code>, le service retourne une réponse contenant les utilisateurs (id, nom et prénom) de la base de données dont les ids figurent entre 1 et 3.  </p>
 <h4 id="configuration-de-trestrequest">Configuration de tRestRequest<a class="headerlink" href="#configuration-de-trestrequest" title="Permanent link">&para;</a></h4>
 <p>tRestRequest devra être configuré comme suit:</p>
@@ -1000,7 +1008,7 @@ service.</li>
           <span class="nt">&lt;lastname&gt;</span>Landolsi<span class="nt">&lt;/lastname&gt;</span>
       <span class="nt">&lt;/user&gt;</span>
   <span class="nt">&lt;/users&gt;</span>
-</pre></div>
+</pre></div><br />
 Si aucun paramètre n'est indiqué: <code>http://localhost:8088/users</code> cela donnera:</p>
 <div class="codehilite"><pre><span></span>  <span class="nt">&lt;users&gt;</span>
       <span class="nt">&lt;user</span> <span class="na">id=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
@@ -1126,6 +1134,8 @@ Si aucun paramètre n'est indiqué: <code>http://localhost:8088/users</code> cel
       
     </div>
     
+      <script src="../assets/javascripts/raphael-min.js"></script>
+      <script src="../assets/javascripts/flowchart.js"></script>
       <script src="../assets/javascripts/application-e3caa82af6.js"></script>
       
       
